@@ -1,0 +1,239 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+:root {
+/*colors*/
+--primary:hsl(172, 67%, 45%) ;
+	
+--Verydarkcyan: hsl(183, 100%, 15%);
+--darkfigrayishcyan: hsl(186, 14%, 43%);
+--darksegrayishcyan: hsl(184, 14%, 56%);
+--Lightgrayishcyan: hsl(185, 41%, 84%);
+--Lightsegrayishcyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+
+/*fontsize*/
+--fontSize:1.5rem;
+
+}
+#grid-container {
+	
+	font-family: 'Space Mono', monospace;
+	display: grid;
+	grid-template-columns: minmax(23.43rem, 90rem);
+	background-color: var(--Lightgrayishcyan);
+}
+#bill-app {
+	
+
+	margin: 2rem auto;
+	border-radius: 4%;
+	background-color: var(--White);
+     padding: 2rem;
+}
+
+
+
+.btn {
+width: 9rem;
+font-size: 1.5rem;
+padding-top: .5rem;
+padding-bottom: .5rem;
+padding-right: 1.5rem;
+padding-left: 1.5rem;
+font-weight: 700;
+border-radius: 6px;
+border: none;
+background-color: var(--Verydarkcyan);
+color: var(--White);
+margin-bottom: 1rem;
+cursor: pointer;
+
+}
+.btn:hover {
+ background-color: var(--primary);
+}
+
+
+header {
+ 
+  margin-bottom: .5rem;
+	font-size: .63rem;
+	color: var(--darkfigrayishcyan);
+	
+}
+
+.grid-container-title{
+	
+	width: 6rem;
+	letter-spacing: .4rem;
+	margin: auto;
+	padding-top: 2rem;
+	
+}
+.grid-container-title span {
+	font-size: 2rem;
+color: var(--Verydarkcyan);
+font-weight: bold;
+text-transform: uppercase;
+}
+
+
+
+.showSec {
+	border-radius: 6px;
+	font-size: var(--fontSize);
+	padding-top: .4rem;
+	padding-bottom: .4rem;
+	border: 1px solid transparent;
+	 margin-bottom: 1rem;
+	background-color: var(--Lightsegrayishcyan);
+	width: 20rem;
+	height: 3rem;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+.showSec:hover {
+	border-color:var(--primary) ;
+}
+
+
+
+img {
+	width:12px;
+	
+}
+.calc-display {
+	background-color: var(--Verydarkcyan);
+	border-radius: 8px;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.calc-display h3 {
+	color: var(--White);
+	font-size: 1rem;
+}
+
+.calc-display h4 {
+	color: var(--darkfigrayishcyan);
+	font-size: .85rem;
+}
+
+span  {
+	color: var(--primary);
+}
+.amount {
+	display: flex;
+	justify-content:space-between;
+
+	margin-bottom: 1rem;
+
+}
+.amount-col {
+	display: flex;
+	flex-direction: column;
+	
+}
+.total {
+	display: flex;
+	justify-content:space-between;
+
+	
+}
+.total-col {
+	display: flex;
+	flex-direction: column;
+
+	margin-bottom: 1.5rem;
+}
+
+
+#reset {
+	background-color: var(--primary);
+	width: 100%;
+	border-radius: 6px;
+	border: none;
+	font-size: 1.2rem;
+	color: var(--Verydarkcyan);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+#reset:hover {
+background-color: var(--Lightgrayishcyan);
+
+}
+
+#customin {
+	background-color: var(--Lightsegrayishcyan);
+	text-align: right;
+	}
+
+#customin:hover {
+	background-color: var(--Lightgrayishcyan);
+	color: var(--Verydarkcyan);
+	border: 1px solid var(--primary);
+}
+
+#tipAmount, #totalTipPer {
+	font-size: 2rem;
+}
+
+#numPeople {
+	position: relative;
+}
+
+
+
+@media(min-width: 1024px){
+ #bill-app {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60rem;
+  font-size: 1.5rem;
+
+
+ }
+ 
+ .calc-display {
+ 	width: 25rem;
+ 
+ 	height: 23rem;
+
+ }
+
+ .desktop-first {
+ 	width: 30rem;
+ 	 }
+ 
+
+ .tip-section {
+ 	
+ 	padding-top: 1rem;
+ 	padding-bottom: 1rem;
+ }
+
+#reset {
+	margin-top: 8rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+}
+
+
+
