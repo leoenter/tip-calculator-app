@@ -75,12 +75,10 @@ header {
 	padding-top: 2rem;
 	
 }
-.grid-container-title span {
-	font-size: 2rem;
-color: var(--Verydarkcyan);
-font-weight: bold;
-text-transform: uppercase;
-	background:red;
+.grid-container-title img {
+	font-size: 6rem;
+	text-align:center;
+
 	
 }
 
