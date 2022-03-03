@@ -69,15 +69,15 @@ header {
 
 .grid-container-title{
 	
-	width: 8rem;
-	letter-spacing: .4rem;
+	width: 10rem;
+	
 	margin: auto;
 	padding-top: 2rem;
 	
 }
 .grid-container-title img {
-	font-size: 6rem;
-	text-align:center;
+	width:100%;
+	object-fit:cover;
 
 	
 }
